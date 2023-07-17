@@ -113,13 +113,13 @@ document.getElementById("nj").innerHTML = ladeg + "." + lamin2 + "." + "0" + "S"
 }else if (latt < 0 && lasec == 60 && lonn < 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin2 + "." + "0" + "S" + " " + ";" + " " + lodeg + "." + lomin + "." + losec + "W";
 
-}else if (lonn > 0 && losec == 60 && latt > 0) {
+}else if (latt > 0 && losec == 60 && latt > 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "N" + " " + ";" + " " + lodeg + "." + lomin2 + "." + "0" + "E";
-}else if (lonn > 0 && losec == 60 && latt < 0) {
+}else if (latt > 0 && losec == 60 && latt < 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "N" + " " + ";" + " " + lodeg + "." + lomin2 + "." + "0" + "W";
-}else if (lonn < 0 && losec == 60 && lonn > 0) {
+}else if (latt < 0 && losec == 60 && lonn > 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "S" + " " + ";" + " " + lodeg + "." + lomin2 + "." + "0" + "E";
-}else if (lonn < 0 && losec == 60 && lonn < 0) {
+}else if (latt < 0 && losec == 60 && lonn < 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "S" + " " + ";" + " " + lodeg + "." + lomin2 + "." + "0" + "W";
 
 }else if (latt > 0 && lamin2 == 60 && lasec == 60  && lonn > 0) {
@@ -131,11 +131,11 @@ document.getElementById("nj").innerHTML = ladeg2 + "." + "0" + "." + "0" + "S" +
 }else if (latt < 0 && lamin2 == 60 && losec == 60 && lonn < 0) {
 document.getElementById("nj").innerHTML = ladeg2 + "." + "0" + "." + "0" + "S" + " " + ";" + " " + lodeg + "." + lomin + "." + losec + "W";
 
-}else if (lonn > 0 && lomin2 == 60 && losec == 60 && latt > 0) {
+}else if (latt > 0 && lomin2 == 60 && losec == 60 && latt > 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "N" + " " + ";" + " " + lodeg2 + "." + "0" + "." + "0" + "E";
-}else if (lonn > 0 && lomin2 == 60 && losec == 60 && latt < 0) {
+}else if (latt > 0 && lomin2 == 60 && losec == 60 && latt < 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "N" + " " + ";" + " " + lodeg2 + "." + "0" + "." + "0" + "W";
-}else if (lonn < 0 && lomin2 == 60 && losec == 60 && lonn > 0) {
+}else if (latt < 0 && lomin2 == 60 && losec == 60 && lonn > 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "S" + " " + ";" + " " + lodeg2 + "." + "0" + "." + "0" + "E";
 }else if (lonn < 0 && lomin2 == 60 && losec == 60 && lonn < 0) {
 document.getElementById("nj").innerHTML = ladeg + "." + lamin + "." + lasec + "S" + " " + ";" + " " + lodeg2 + "." + "0" + "." + "0" + "W";
