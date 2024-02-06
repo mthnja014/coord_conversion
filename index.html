@@ -4,8 +4,8 @@
    <title></title>
 </head>
 <body>
-   <h>Njabulo coord conversion platform</h><br>
-<button type="button" onclick="myFunction()">Compute DMS</button><br><br>
+   <h>Ontika coord conversion platform</h><br>
+<button type="button" style="background-color:'red', color='blue' onclick="myFunction()">Compute DMS</button><br><br>
 <table>
 <tr><td style="background-color: rgb(127, 127, 255);">Latitude</td><td style="background-color: rgb(230, 230, 130); text-align: center; width: 120px"><input type="number" id="lat"></td></tr>
 <tr><td style="background-color: rgb(127, 127, 255);">Longitude</td><td style="background-color: rgb(230, 230, 130); text-align: center; width: 120px"><input type="number" id="lon"></td></tr>
@@ -37,18 +37,39 @@ var lodeg2 = Math.pow(lodeg, 1) + Math.pow(1, 1);
 
 if (lonn == "" && latt == "") {
 document.getElementById("nj").innerHTML = "Please insert the values for longitude and latitude!";
+   setTimeout(function () {
+document.getElementById("output").innerHTML = "";
+}, 3000);
 }else if (lonn == "") {
 document.getElementById("nj").innerHTML = "Please insert the value for longitude!";
+   setTimeout(function () {
+document.getElementById("output").innerHTML = "";
+}, 3000);
 }else if (latt == "") {
 document.getElementById("nj").innerHTML = "Please insert the value for latitude!";
+   setTimeout(function () {
+document.getElementById("output").innerHTML = "";
+}, 3000);
 }else if (lonn < -180) {
 document.getElementById("nj").innerHTML = "The value for longitude should not be less than -180°! and should not be greater than 180°!";
+   setTimeout(function () {
+document.getElementById("output").innerHTML = "";
+}, 3000);
 }else if (lonn > 180) {
 document.getElementById("nj").innerHTML = "The value for longitude should not be less than -180° and should not be greater than 180°!";
 }else if (latt < -90) {
+   setTimeout(function () {
+document.getElementById("output").innerHTML = "";
+}, 3000);
 document.getElementById("nj").innerHTML = "The value for latitude should not be less than -90° and should not be greater than 90°!";
+   setTimeout(function () {
+document.getElementById("output").innerHTML = "";
+}, 3000);
 }else if (latt > 90) {
 document.getElementById("nj").innerHTML = "The value for latitude should not be less than -90° and should not be greater than 90°!";
+   setTimeout(function () {
+document.getElementById("output").innerHTML = "";
+}, 3000);
 
 }else if (latt > 0 && lamin2 == 60 && lasec == 60  && lonn > 0 && lomin2 == 60 && losec == 60) {
 document.getElementById("nj").innerHTML = ladeg2 + "." + "0" + "." + "0" + "N" + " " + ";" + " " + lodeg2 + "." + "0" + "." + "0" + "E";
